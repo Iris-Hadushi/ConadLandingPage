@@ -1,0 +1,150 @@
+html,
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.logo-img {
+    width: 130px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.headers-section {
+    background-color: #fff;
+    height: 70 vh;
+}
+
+.headers-section img {
+    z-index: 999;
+}
+
+.top-right {
+    position: absolute;
+    top: 35%;
+    right: 2%;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.paragraph {
+    position: absolute;
+    top: 40%;
+    right: 12%;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.section1 {
+    margin-top: 80px;
+    display: block;
+}
+
+.section1 img {
+    margin-top: 80px;
+}
+
+.tree {
+    width: 750px;
+}
+
+.bio {
+    width: 110px;
+    position: absolute;
+    top: 101%;
+    right: 34%;
+    background-color: #94c11f5c;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.eco {
+    width: 110px;
+    position: absolute;
+    top: 101%;
+    left: 34.5%;
+    background-color: #006b3b33;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+}
+
+.equo {
+    width: 110px;
+    position: absolute;
+    top: 124%;
+    left: 27%;
+    background-color: #b2202b29;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    transform: rotate(-25deg);
+}
+
+.veg {
+    width: 110px;
+    position: absolute;
+    top: 124%;
+    right: 26.8%;
+    background-color: #ea760554;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    transform: rotate(+25deg);
+}
+
+.section2 {
+    display: block;
+    margin-top: 80px;
+}
+
+@media(max-width:860px) {
+    .headers-section {
+        display: none;
+    }
+    .section1 {
+        display: none;
+    }
+    .section2 {
+        display: none;
+    }
+    .headers-section {
+        background-color: #fff;
+        height: 30 vh;
+    }
+    .headers-section img {
+        z-index: 999;
+        width: 400px;
+        position: absolute;
+        left: 8px;
+    }
+    .top-right {
+        position: absolute;
+        top: 40%;
+        right: 7%;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .paragraph {
+        position: absolute;
+        top: 44%;
+        right: 23%;
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .more {
+        position: absolute;
+        right: 35%;
+        top: 50%;
+        padding: 8px 30px;
+        background-color: #f7e946;
+        color: #000;
+        border: none;
+    }
+    .more:hover {
+        background-color: transparent;
+        color: #f7e946;
+        border: 1px solid #f7e946;
+    }
+}

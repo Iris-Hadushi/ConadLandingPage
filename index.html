@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Conad-Earth Day</title>
+    <style>
+    .equo {
+    width: 140px;
+    position: absolute;
+  top: 140%;
+    left: 21.8%;
+    background-color: #b2202b29;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    transform: rotate(
+-25deg
+);
+}
+.bio{
+    width:140px;
+    position:absolute;
+    top:111%;
+    right:31%;
+    background-color:#94c11f5c;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+ 
+}
+.eco{
+    width:140px;
+    position:absolute;
+    top:111%;
+    left:31.5%;
+    background-color:#006b3b33;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+}
+.veg{
+    width:140px;
+    position:absolute;
+   top: 140%;
+    right: 21.8%;
+    background-color:#ea760554;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+      transform: rotate(+25deg);
+}
+    .tree{
+  width:750px;  
+} 
+    .tips-container {
+        text-align: center;
+    margin-bottom: 50px;
+    padding-bottom:100px;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: 100
+}
+
+.icon {
+    position: relative;
+    bottom: 11px
+}
+
+.mt-100 {
+    margin-top: 100px
+}
+
+.profile img {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%
+    background:#fff;
+}
+
+.card {
+    border-radius: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.card-body {
+    position: relative;
+    bottom: 35px
+}
+
+.btn {
+    margin-top: 36px;
+    margin-bottom: 45px;
+    background-color: #AB47BC;
+    border: none;
+    color: #fff
+}
+
+.btn:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    color: #fff
+}
+
+.header {
+    padding-top: 40px
+}
+    .logo-img{
+    width:130px;
+    height:100%;
+    object-fit:cover;
+}
+    .more{
+    position:absolute;
+    right:14%;
+    top:46%;
+    padding:10px 36px;
+    background-color:#f7e946;
+    color:#000;
+    border:none;
+}
+.more:hover{
+    
+    background-color:transparent;
+    color:#f7e946;
+    border:1px solid #f7e946;
+}
+.navbar{
+ position: -webkit-sticky;
+  position: sticky;
+  /* sticky or fixed are fine */
+  position: fixed;
+  top: 0;
+  height: 69px;
+  width: 100%;
+  background: none; /* background when scroll is in the top */
+  transition: background .5s; /* control how smooth the background changes */
+     z-index:600;
+}
+nav.scrolled {
+  background: #fff;
+}
+    .verso{
+    display:none;
+}
+.protect{
+    display:none;
+}
+.mobile{
+display:none;
+}
+ .footer {
+	 background:#e8f5e8 ;
+	 color:#000;
+}
+.footer .links ul {
+	 list-style-type: none;
+}
+ .footer .links li a {
+	 color: #000;
+	 transition: color 0.2s;
+}
+ .footer .links li a:hover {
+	 text-decoration: none;
+	 color: #000;
+}
+ .footer .about-company i {
+	 font-size: 25px;
+}
+ .footer .about-company a {
+	 color: #000;
+	 transition: color 0.2s;
+}
+ .footer .about-company a:hover {
+	 color: #000;
+}
+ .footer .location i {
+	 font-size: 18px;
+}
+ .footer .copyright p {
+	 border-top: 1px solid #000;
+}
+.mini-footer {
+  background-color:#006b3b;
+  color:#fafafa;
+  height:30px;
+}
+ .fa-phone-alt{
+    position:absolute;
+    padding:7px;
+}
+ @media(max-width:860px){
+     .mobilebtn{
+       position:absolute;
+left: 31%;
+top:37%;
+   
+    padding:10px 36px;
+    background-color:#f7e946;
+    color:#000;
+    border:none;  
+     }
+            .mobile{
+                display:block;
+            }
+    .headers-section{
+        display:none;
+    }
+    .section1{
+        display:none;
+    }
+       .section2{
+        display:none;
+    }
+ .headers-section{
+    background-color:#fff;
+    height:30 vh;
+    
+}
+.headers-section img{
+  z-index: 999;
+width: 400px;
+position: absolute;
+left: 8px;
+
+} 
+.top-right {
+  position: absolute;
+  top: 40%;
+  right: 7%;
+  font-size: 20px;
+  font-weight:600;
+}
+.paragraph{
+  position: absolute;
+  top: 44%;
+  right: 23%;
+  font-size: 20px;
+  font-weight:300;
+}
+
+.mobile{
+    background-color:#fff;
+    height:70 vh;
+    
+}
+.mobile img{
+    z-index:999;
+  display: block;
+
+width: 100%;
+
+margin-left: auto;
+
+margin-right: auto;
+}
+.text-h1{
+top:45%;
+font-weight:600;
+font-size: 18px;
+ display: flex;
+  justify-content: center;
+}
+.text-p{
+  top:45%;
+  font-weight:300;
+  font-size: 16px;  
+  display: flex;
+  justify-content: center;
+}
+.verso{
+    height:50vh;
+    display:block;
+    background-color:#FAFAFA;
+    margin-top:20%;
+}
+.verso h2{
+    padding-top:5%;
+    display: flex;
+    justify-content: center;
+    top:60%;
+    font-size:18px;
+    padding-bottom:5%;
+}
+.bio-mob{
+    padding:7%;
+  width:140px;
+    height:100px;
+    border:1px solid #B62A34 ;
+     border-radius:14px;
+    object-fit:cover;
+
+}
+.eco-mob{
+        padding:7%;
+  width:140px;
+    height:100px;
+    border:1px solid #006B3B ;
+     border-radius:14px;
+     object-fit:cover;
+}
+.equo-mob{
+       padding:7%; 
+  width:140px;
+    height:100px;
+    border:1px solid  #EB7505;
+     border-radius:14px;
+     object-fit:cover;
+}
+.veg-mob{
+        padding:7%;
+  width:140px;
+    height:100px;
+    border:1px solid #BCCF59 ;
+    border-radius:14px;
+    object-fit:cover;
+}
+.protect{
+    padding-top:10%;
+    display:block;
+    padding-bottom:10%;
+   
+}
+.protect h2{
+    font-size:18px;
+     display: flex;
+    justify-content: center;
+    top:60%;
+    font-size:18px;
+}
+.card{
+background-color:#68CCEA4D;
+padding:3%;
+border-radius:14px;
+}
+.card1{
+background-color:#A5DC695E;
+padding:3%;
+border-radius:14px;
+}
+.card2{
+background-color:#FF8C8C73;
+padding:3%;
+border-radius:14px;
+}
+.card3{
+background-color:#AAEE3963;
+padding:3%;
+border-radius:14px;
+}
+.card4{
+background-color:#EAC5835E;
+padding:3%;
+border-radius:14px;
+}
+.card5{
+background-color:#FEDF305E;
+padding:3%;
+border-radius:14px;
+}
+.container{
+   margin-right: auto;
+    margin-left: auto;
+}
+.navbar-toggler{
+
+    background-color: #f7e946;
+    border:none;
+ 
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+.navbar-toggler-icon{
+    width:22px;
+    height: 0.5em;
+}
+
+
+}
+    </style>
+  </head>
+  <body>
+   <nav class="navbar navbar-expand-lg ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <img src="images/CONAD-logo.png" class="logo-img">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+ 
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    </div>
+  </div>
+</nav>
+<div class="headers-section">
+    <img src="images/Header.png">
+    <div class="top-right">Lorem ipsum dolor sit amet consectetur</div>
+        <div class=" text-center paragraph">Lorem ipsum dolor sit amet </div>
+        <button class="more">Më shumë</button>
+</div>
+
+<!--Header section per mobile-->
+<div class="mobile">
+    <img src="images/Header.png">
+    <div class="text-h1">Lorem ipsum dolor sit amet consectetur</div>
+        <div class="text-p">Lorem ipsum dolor sit amet </div>
+        <button class="mobilebtn">Më shumë</button>
+</div>
+
+<section>
+    <div class=" text-center section1 pt-4">
+        <h2>Produktet tona "Verso Natura" </h2>
+        <img src="images/eco-friendly.png" class="tree"/>
+        <img src="images/logo-versonatura-bio.png" class="bio"/>
+         <img src="images/logo-versonatura-eco.png" class="eco"/>
+          <img src="images/logo-versonatura-equo.png" class="equo"/>
+           <img src="images/verso_natura_veg.png" class="veg"/>
+    </div>
+</section>
+
+<section>
+ <div class="text-center container verso">
+<h2>Produktet tona "Verso Natura" </h2>
+ <div class="row">
+     <div class="col">
+        <img src="images/logo-versonatura-bio.png" class="bio-mob"/>   
+     </div>
+        <div class="col">
+            <img src="images/logo-versonatura-eco.png" class="eco-mob"/> 
+     </div>
+ </div>  
+  <div class="row" style="margin-top:16%">
+     <div class="col">
+        <img src="images/logo-versonatura-equo.png" class="equo-mob"/>   
+     </div>
+        <div class="col">
+            <img src="images/verso_natura_veg.png" class="veg-mob"/> 
+     </div>
+ </div>
+ </div>
+</section>
+
+
+<!--<section>-->
+<!-- <div class="text-center container protect">-->
+<!--<h2>Si mund ta mbrojme Token? </h2>-->
+<!--<div class="container">-->
+<!--<div class=" card">-->
+<!--  <div class="card-body">-->
+<!--    This is some text within a card body-->
+<!--  </div> -->
+<!--</div>-->
+<!--<br>-->
+<!--<div class=" card1">-->
+<!--  <div class="card-body">-->
+<!--    This is some text within a card body-->
+<!--  </div>-->
+<!--</div>-->
+<!--<br>-->
+<!--<div class=" card2">-->
+<!--  <div class="card-body">-->
+<!--    This is some text within a card body-->
+<!--  </div>-->
+<!--</div>-->
+<!--<br>-->
+<!--<div class=" card3">-->
+<!--  <div class="card-body">-->
+<!--    This is some text within a card body-->
+<!--  </div>-->
+<!--</div>-->
+<!--<br>-->
+<!--<div class=" card4">-->
+<!--  <div class="card-body">-->
+<!--    This is some text within a card body-->
+<!--  </div>-->
+<!--</div>-->
+<!--<br>-->
+<!--<div class=" card5">-->
+<!--  <div class="card-body">-->
+<!--    This is some text within a card body-->
+<!--  </div>-->
+<!--</div>-->
+<!--</div>-->
+<!-- </div>-->
+<!--</section>-->
+
+
+<div class='container tips-container mx-auto mt-5 col-md-10 mt-100'>
+    <div class="header">
+        <div class="title"><h2>Si mund ta mbrojmë Tokën?</h2></div>
+    </div>
+    <div class="row" style="justify-content: center">
+        <div class="card col-md-3 mt-100 " style="background-color:#E1F5FB;box-shadow: 0 10px 15px #E1F5FB;">
+            <div class="card-content">
+                <div class="card-body p-0">
+                    <div class="profile"> <img src="images/drop.png"> </div>
+                    <div class="card-title"> Riperdor & Riciklo<br /> </div>
+                    <div class="card-subtitle">
+                        <p> <small class="text-muted"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </small> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card col-md-3 mt-100" style="background-color:#EDF8E1;box-shadow: 0 10px 15px #EDF8E1;">
+            <div class="card-content">
+                <div class="card-body p-0">
+                    <div class="profile"> <img src="images/leaf.png"> </div>
+                    <div class="card-title"> Shmang & Minimizo<br />  </div>
+                    <div class="card-subtitle">
+                        <p> <small class="text-muted"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </small> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card col-md-3 mt-100" style="background-color:#FFE8E8;box-shadow:0 10px 15px #FFE8E8;">
+            <div class="card-content">
+                <div class="card-body p-0">
+                    <div class="profile"> <img src="images/solidarity.png"> </div>
+                    <div class="card-title"> Perdor produkte & sherbime eco-friendly<br />  </div>
+                    <div class="card-subtitle">
+                        <p> <small class="text-muted"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </small> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+       <div class="row" style="justify-content: center">
+        <div class="card col-md-3 mt-100" style="background-color:#FBF3E6;box-shadow: 0 10px 15px #FBF3E6;">
+            <div class="card-content">
+                <div class="card-body p-0">
+                    <div class="profile"> <img src="images/save-energy.png"> </div>
+                    <div class="card-title">Behu vullnetar<br />  </div>
+                    <div class="card-subtitle">
+                        <p> <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card col-md-3 mt-100" style="background-color:#FFF9D6;box-shadow: 0 10px 15px #FFF9D6;">
+            <div class="card-content">
+                <div class="card-body p-0">
+                    <div class="profile"> <img src="images/growth.png"> </div>
+                    <div class="card-title"> Ul perdorimin e energjise <br /> </div>
+                    <div class="card-subtitle">
+                        <p> <small class="text-muted"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </small> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card col-md-3 mt-100" style="background-color:#E8F4D4;box-shadow: 0 10px 15px #E8F4D4;">
+            <div class="card-content">
+                <div class="card-body p-0">
+                    <div class="profile"> <img src="images/green-tea.png"> </div>
+                    <div class="card-title">Promovo gjelberimin ne zonen tuaj
+ lokale<br /></div>
+                    <div class="card-subtitle">
+                        <p> <small class="text-muted"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </small> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>                            
+
+
+<!--Footer -->
+<section>
+    
+<div class="mt-5  pb-5 footer">
+     <div class="mini-footer">
+
+    </div>   
+<div class="text-center mt-5  container">
+  <div class="row">
+    <div class="col-lg-5 col-xs-12 about-company">
+      <h2> <img src="images/CONAD-logo.png" class="logo-img"></h2>
+      <br>
+      <p class="pr-5 text-black-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante mollis quam tristique convallis </p>
+    </div>
+
+    <div class="col-lg-7 col-xs-12 location">
+      <h4 class="mt-lg-0 mt-sm-4">Location</h4>
+      <p>22, Lorem ipsum dolor, consectetur adipiscing</p>
+      <p class="mb-0"><i class="fa fa-phone mr-3"></i>(541) 754-3010</p>
+      <p><i class="fa fa-envelope-o mr-3"></i>info@hsdf.com</p>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col copyright">
+      <p class=""><small class="text-black-50">© 2021. All Rights Reserved.</small></p>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"></script>
+    
+       <script src="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+         <script src="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+   <script>var navbar = document.querySelector('nav')
+
+window.onscroll = function() {
+
+  // pageYOffset or scrollY
+  if (window.pageYOffset > 0) {
+    navbar.classList.add('scrolled')
+  } else {
+    navbar.classList.remove('scrolled')
+  }
+}</script>
+  </body>
+</html>
